@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    background-color: hsl(217, 19%, 24%);
+     width: 500px;
+    height: 300px; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.dice-inside {
+    background-color: hsl(150, 100%, 66%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+
+}
+
+.dice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dice-inside:hover {
+    box-shadow: 2px 2px 40px 2px hsl(150, 100%, 66%);
+}
+
+.divider {
+    position: absolute;
+    top: 70%;
+    margin: 10px;
+}
+
+.adviceId {
+    position: absolute;
+    top: 10%;
+    font-size: 16px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.advice {
+    font-size: 28px;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 375px) ,(max-width: 550px){
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container {
+        width: 90%;
+        height: 80%;
+    }
+
+    .dice {
+        position: relative;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .dice-inside {
+            background-color: hsl(150, 100%, 66%);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%);
+            cursor: pointer;
+    }
+
+    .divider {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        width: 250px;
+        height: 16px;
+    }
+
+    .adviceId {
+        position: static;
+        top: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .advice {
+        font-size: 20px;
+        font-weight: 800;
+        color: hsl(193, 38%, 86%);
+    }
+}
